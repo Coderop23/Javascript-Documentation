@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.25;
+  font-size: 14px;
+}
+
+main {
+  margin: 3.5em 3em;
+  width: 80%;
+}
+
+article {
+  margin-bottom: 3.5em;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar {
+  border: 1px solid #ccc;
+  width: 15%;
+  min-width: 200px;
+  font-size: 16px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+.page_title {
+  border-bottom: 1px solid #ccc;
+  font-weight: 300;
+  padding: 0.5em;
+  line-height: 1.5;
+}
+
+.sidebar li {
+  list-style-type: none;
+  border-bottom: 1px solid #ccc;
+  padding: 0.75em 1.15em;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar a {
+  text-decoration: none;
+  font-weight: 300;
+  color: black;
+}
+
+.sidebar li:hover,
+.sidebar li:focus {
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.article_title {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1em;
+}
+
+.article_detail,
+.article_body {
+  padding-inline: 0.75em;
+}
+
+.article_detail,
+.text {
+  margin-block: 1.2em;
+}
+
+.article_list li {
+  margin-bottom: 0.5em;
+}
+
+.article_list {
+  padding-left: 2em;
+}
+
+.article_program {
+  font-family: monospace;
+  line-height: 1.75;
+  background-color: hsl(0, 0%, 95%);
+  margin: 2em;
+  padding: 0.75em 1em;
+}
